@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Java, Jetty, WEB网络, 数据库, 软件技术, shentar, 童燕群" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Java, Jetty, WEB网络, 数据库, 软件技术">
+<meta name="keywords" content="Java, Jetty, WEB网络, 数据库, 软件技术, shentar, 童燕群">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jAlbum">
+<meta property="og:url" content="https://shentar.github.io/index.html">
+<meta property="og:site_name" content="jAlbum">
+<meta property="og:description" content="Java, Jetty, WEB网络, 数据库, 软件技术">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jAlbum">
+<meta name="twitter:description" content="Java, Jetty, WEB网络, 数据库, 软件技术">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://shentar.github.io/"/>
+
+
+
+
+
+  <title>jAlbum</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-300061-11', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">jAlbum</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://shentar.github.io/2018/02/11/jalbum/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Shentar">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jAlbum">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/11/jalbum/" itemprop="url">家用网络相册jAlbum安装使用指南</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-11T22:27:29+08:00">
+                2018-02-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>在搭建了基于Home NAS系统之后，使用btsync工具将家里的各个终端：台式电脑、笔记本和家人的各个手机上面的图片、拍摄视频、微信视频等文件都集中备份到了Home NAS上面。发现各个设备上面的图片存放时并没有非常严谨的分类，并且有大量的重复照片，就想着做一个照片、视频管理系统放在Home NAS上面持续运行并提供相册服务。系统前端提供web访问接口，浏览器可以直接访问，后台生成一个简易相册库，以WEB页面的方式供各个终端查看和下载照片。 想到哪儿做到哪儿，并没有非常详尽的需求分析分析和软件设计。最终实现了如下功能：</p>
+<ol>
+<li>实时监控和搜集指定目录的所有照片文件：jpg，png类型，所有视频文件：mp4。建立一张sqlite3数据表，存储所有照片的路径、时间、指纹和长宽比等信息。系统也支持运行在目前各个主流的操作系统：MS Windows、MAC OS和Linux上面，免安装部署。</li>
+<li>对1步骤生成的照片库根据照片的指纹值进行剔重，生成一张新的表，确保内容相同的照片只存一条记录。并且所有记录按照媒体文件的拍摄时间顺序排列。</li>
+<li>提供RESTful的接口供浏览器访问和获取相册。提供分年、月、日的视图。在前端呈现上面直接使用Java生成web页面，没有用一些高级的Marker组件。</li>
+<li>监控文件系统中新建、修改和删除文件，并实时更新媒体库。</li>
+<li>支持mp4视频文件的呈现。（需要在本机支持ffmpeg和ffprobe命令，下载ffmpeg工具：<a href="https://ffmpeg.org/download.html" target="_blank" rel="noopener">ffmpeg.org</a>，如果是Windows系统，则需要把exe文件直接放入C:\Windows目录下；Linux系统可以直接使用发行版的软件仓库安装该软件。）</li>
+<li>新增后台同步照片到<a href="http://www.huaweicloud.com/product/obs.html" target="_blank" rel="noopener">Huawei Cloud OBS</a>、Amazon S3对象存储上面，Huawei Cloud OBS支持直接上传冷对象，可以节省约3/4的开支，Amazon S3则需要配置后台任务定期转换对象到冷存储，也可以达到节省开支的效果。按照当前的费率，备份30GB的多媒体数据，每个月的开销大约在￥1多。</li>
+<li>使用<a href="https://www.faceplusplus.com.cn/" target="_blank" rel="noopener">Face++</a>服务实现人像识别，并按照人像对照片进行归集。开启该功能需要根据Face++的提示获取访问API的密钥对。</li>
+<li>安全方面：基于Cookies机制实现简易认证，可防止搜索引擎抓取私人照片；支持HTTPS访问（需要自行制作JKS格式的证书库并替代默认证书库）。</li>
+</ol>
+<p>软件架构图：<a href="http://content.codefine.site/architecture.jpg" target="_blank"><img src="http://content.codefine.site/architecture_new.jpg"></a></p>
+<h1 id="源码获取"><a href="#源码获取" class="headerlink" title="源码获取"></a>源码获取</h1><p>源码托管在此GIT服务上面：<a href="http://git.codefine.site:3000/Shentar/jAlbum" target="_blank" rel="noopener">jAlbum</a>（<a href="http://git.codefine.site:3000/Shentar/jAlbum" title="http://git.codefine.site:3000/Shentar/jAlbum" target="_blank" rel="noopener">http://git.codefine.site:3000/Shentar/jAlbum</a>） ，欢迎fork、提交issue和修改代码。</p>
+<h1 id="软件包下载"><a href="#软件包下载" class="headerlink" title="软件包下载"></a>软件包下载</h1><p>以下是适用于X86 Windows系统和Linux系统的软件包。下载软件包后，解压缩，完成必须的配置即可运行。<br>  <table cellspacing="0" cellpadding="2" width="100%" border="0"><tbody>     <tr>       <td valign="top" width="65">版本</td>        <td valign="top" width="122">发布时间</td>        <td valign="top" width="425">更新说明</td>        <td valign="top" width="97">下载链接</td>     </tr>  <tr>       <td valign="top" width="65">0.3.0</td>        <td valign="top" width="122">3 Mar 2018</td>        <td valign="top" width="425">1、支持使用Google Analytics跟踪访问记录；<br>2、解决若干已知bug。</td>        <td valign="top" width="97"><a href="http://content.codefine.site/jAlbum_0.3.0.zip" target="_blank" rel="noopener">下载</a></td>     </tr>    <tr>       <td valign="top" width="65">0.2.9</td>        <td valign="top" width="122">25 Nov 2017</td>        <td valign="top" width="425">1、支持备份数据到Huawei Cloud OBS对象存储。</td>        <td valign="top" width="97"><a href="http://content.codefine.site/jAlbum_0.2.9.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.8</td>        <td valign="top" width="122">18 Nov 2017</td>        <td valign="top" width="425">1、支持HTTPS访问；<br>2、解决响应中重复HTTP头域Date和Expire问题；<br>3、解决鉴权Bug。 </td>        <td valign="top" width="97"><a href="http://content.codefine.site/jAlbum_0.2.8.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.7</td>        <td valign="top" width="122">19 Jul 2017</td>        <td valign="top" width="425">1、新增“风景”页；<br>2、使用Maven管理项目；<br>3、其他问题解决。 </td>        <td valign="top" width="97"><a href="http://7ktqfj.com1.z0.glb.clouddn.com/jAlbum_release_0.2.7.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.6</td>        <td valign="top" width="122">19 May 2017</td>        <td valign="top" width="425">添加访问权限控制，相册放在外网访问时，发放token才能访问，避免照片被陌生人访问，如：搜索引擎抓取照片。</td>        <td valign="top" width="97"><a href="http://7ktqfj.com1.z0.glb.clouddn.com/jAlbum_0.2.6.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.5</td>        <td valign="top" width="122">7 May 2017</td>        <td valign="top" width="425">性能提升。</td>        <td valign="top" width="97"><a href="http://7ktqfj.com1.z0.glb.clouddn.com/jAlbum_0.2.5.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.4</td>        <td valign="top" width="122">3 Apr 2017</td>        <td valign="top" width="425">1、可靠性功能问题解决。<br>2、性能提升。</td>        <td valign="top" width="97"><a href="http://7ktqfj.com1.z0.glb.clouddn.com/jAlbum_0.2.4.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.3</td>        <td valign="top" width="122">17 Mar 2017</td>        <td valign="top" width="425">增加人像识别和按照任务归集照片功能。</td>        <td valign="top" width="97"><a href="http://7ktqfj.com1.z0.glb.clouddn.com/jAlbum_0.2.3.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.2</td>        <td valign="top" width="122">29 Jan 2017</td>        <td valign="top" width="425">1、增加后台同步照片到AmazonS3服务端实现。<br>2、修改若干重复文件检测bug。</td>        <td valign="top" width="97"><a href="http://7ktqfj.com1.z0.glb.clouddn.com/jAlbum_0.2.2.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.1</td>        <td valign="top" width="122">8 Jan 2017</td>        <td valign="top" width="425">解决问题：Chrome浏览器Ranges下载时第一个Range时不按照协议实现收取所有数据，最终在页面有多个Video时会导致浏览器挂死。单页面多个Video时，提取视频文件的缩略图呈现。</td>        <td valign="top" width="97"><a href="http://7ktqfj.com1.z0.glb.clouddn.com/jAlbum_0.2.1.zip" target="_blank" rel="noopener">下载</a></td>     </tr>      <tr>       <td valign="top" width="65">0.2.0</td>        <td valign="top" width="122">6 Nov 2016</td>        <td valign="top" width="425">1、新增Video的支持，支持对MP4视频文件呈现；<br>2、修正稳定性和功能细节的bug。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.9</td>        <td valign="top" width="122">14 Aug 2016</td>        <td valign="top" width="425">1、PC端浏览器，增加键盘翻页，左方向键翻上一页，右方向键翻下一页。 2、改进“照片发现”性能，最快在20秒内新增照片可以呈现到页面上。 3、其他bug解决。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.8</td>        <td valign="top" width="122">5 Aug 2016</td>        <td valign="top" width="425">1、优化照片隐藏逻辑，当隐藏的照片被移动或者删除后又添加时，也不会被显示出来。<br>2、适配移动终端浏览器，实现触控滑动照片翻页。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.7</td>        <td valign="top" width="122">31 Jul 2016</td>        <td valign="top" width="425">自动识别图片的旋转角度，在前端呈现时自动适应浏览器并旋转到正确的方向。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.6</td>        <td valign="top" width="122">24 Jul 2016</td>        <td valign="top" width="425">修正若干bug。使用按钮代替超链接来导航相册。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.5</td>        <td valign="top" width="122">21 Jul 2016</td>        <td valign="top" width="425">1、增加前端照片旋转功能。<br>2、完善照片删除功能。<br>3、解决稳定性bug。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.4</td>        <td valign="top" width="122">18 Jul 2016</td>        <td valign="top" width="425">新增删除照片功能。在单张照片显示的页面上面可以点击删除链接“删除”该照片，该照片之后不会再显示，当然照片还存在于磁盘中，只是不再显示。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.3</td>        <td valign="top" width="122">10 Jul 2016</td>        <td valign="top" width="425">1、增加文件系统监控，利用文件系统的notify机制及时处理新的文件变更；<br>2、不再定时全盘扫描，只在启动时进行全盘扫描；<br>3、定时根据base表的变更情况刷新辅助表及时呈现新增照片。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.1</td>        <td valign="top" width="122">2 Jul 2016</td>        <td valign="top" width="425">1、支持缩略图；<br>2、优化编译脚本；<br>3、增加配置文件。</td>        <td valign="top" width="97">&#160;</td>     </tr>      <tr>       <td valign="top" width="65">0.1.0</td>        <td valign="top" width="122">23 Jun 2016</td>        <td valign="top" width="425">first release.</td>        <td valign="top" width="97">&#160;</td>     </tr>   </tbody></table>  </p>
+<h1 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h1><p>相册的效果图 0.2.4版本，根据人像识别结果进行照片归集页面截图：<a href="http://content.codefine.site/wp-content/uploads/2017/04/faces.png" target="_blank" rel="noopener"><img src="http://content.codefine.site/wp-content/uploads/2017/04/faces_thumb.png" alt="faces"></a><br>0.2.0版本截图： 主页：<img src="http://content.codefine.site/wp-content/uploads/2016/06/index1.png" alt="index"><br>视频合集页面： <a href="http://content.codefine.site/wp-content/uploads/2016/06/video1.png" target="_blank" rel="noopener"><img src="http://content.codefine.site/wp-content/uploads/2016/06/video1.png" alt="video"></a><br>0.1.1版本截图：<a href="http://content.codefine.site/wp-content/uploads/2016/07/snapshot1.png" target="_blank" rel="noopener"><img src="http://content.codefine.site/wp-content/uploads/2016/07/snapshot_thumb1.png" alt="snapshot"></a></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h2><p>在<a href="http://git.codefine.site:3000/Shentar/jAlbum/releases" target="_blank" rel="noopener">Git仓库</a>下载最新的版本的代码包，执行如下命令编译安装：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd jAlbum</span><br><span class="line">mvn install</span><br></pre></td></tr></table></figure></p>
+<h2 id="下载Release包"><a href="#下载Release包" class="headerlink" title="下载Release包"></a>下载Release包</h2><p>直接下载编译好的软件包，参考<a href="#软件包下载">软件包下载</a>。</p>
+<h1 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h1><p>停止运行jAlbum，将新版本的软件包中根目录下的jalbum.xml、log4j.xml、keystore和dedup.db文件删除，然后将剩下的所有文件和目录覆盖到原运行目录。重新启动jAlbum即可。</p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h2><h3 id="照片"><a href="#照片" class="headerlink" title="照片"></a>照片</h3><p>当前支持的照片文件类型有：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picfilesuffix</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">suffix</span>&gt;</span>jpg<span class="tag">&lt;/<span class="name">suffix</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">suffix</span>&gt;</span>jpeg<span class="tag">&lt;/<span class="name">suffix</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">suffix</span>&gt;</span>png<span class="tag">&lt;/<span class="name">suffix</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picfilesuffix</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>将上述代码添加到jalbum.xml的config标签内即可。</p>
+<h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><p>当前仅支持mp4文件的分析和呈现，并且需要先安装ffmpeg工具。在ffmpeg官方站点下载当前操作系统的工具，将ffprobe和ffmpeg可执行文件置于系统PATH变量所指向的路径下，如：C:\Windows目录下。jAlbum运行中会调用该工具分析MP4视频文件。<br><br>另外，在jalbum.xml内，picfilesuffix标签内增加如下内容：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">suffix</span>&gt;</span>mp4<span class="tag">&lt;/<span class="name">suffix</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="文件大小"><a href="#文件大小" class="headerlink" title="文件大小"></a>文件大小</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">minfilesize</span>&gt;</span>51200<span class="tag">&lt;/<span class="name">minfilesize</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">maxfilesize</span>&gt;</span>512000000<span class="tag">&lt;/<span class="name">maxfilesize</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>此配置用于定制最小文件和最大文件大小。  </p>
+<h2 id="指定目录"><a href="#指定目录" class="headerlink" title="指定目录"></a>指定目录</h2><p>指定jAlbum监控的目录：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">inputdir</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dir</span>&gt;</span>D:\\<span class="tag">&lt;/<span class="name">dir</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dir</span>&gt;</span>C:\\<span class="tag">&lt;/<span class="name">dir</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">inputdir</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>可以配置多个目录。注意Windows系统下，需要使用双斜杠来作为目录分隔符。<br><br>指定jAlbum排除某些特定目录，对于某些系统目录或者出于隐私保护而不希望呈现的目录，可以使用此配置排除监控：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">excludedir</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dir</span>&gt;</span>C:\\windows\\<span class="tag">&lt;/<span class="name">dir</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dir</span>&gt;</span>C:\\Program Files\\<span class="tag">&lt;/<span class="name">dir</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dir</span>&gt;</span>./<span class="tag">&lt;/<span class="name">dir</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">excludedir</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>指定缩略图存放目录：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">thumbnaildir</span>&gt;</span></span><br><span class="line">      ./thumbnail</span><br><span class="line"><span class="tag">&lt;/<span class="name">thumbnaildir</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>thumbnaildir标签用于指定缩略图文件存放的目录。  </p>
+<h2 id="界面定制"><a href="#界面定制" class="headerlink" title="界面定制"></a>界面定制</h2><p>maxpicsperonepage标签用于定制单个页面中显示的媒体文件的数量。</p>
+<h2 id="性能调优"><a href="#性能调优" class="headerlink" title="性能调优"></a>性能调优</h2><p>threadcount标签用于定制任务并发数量。可以根据当前系统的CPU性能定制该数值。<br><br>hashalog用于定制计算照片文件和视频文件的HASH算法，常用的有MD5, SHA-256, SHA-1，一般而言HASH算法强度越高计算要求也越高，对于普通家用照片剔重，MD5比较合适。</p>
+<h2 id="人脸识别"><a href="#人脸识别" class="headerlink" title="人脸识别"></a>人脸识别</h2><p>首先需要到<a href="https://www.faceplusplus.com.cn/" target="_blank" rel="noopener">旷视科技</a>申请API Key，然后在jalbum.xml中配置如下标签：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Facer</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ak</span>&gt;</span><span class="tag">&lt;/<span class="name">ak</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">sk</span>&gt;</span><span class="tag">&lt;/<span class="name">sk</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">facesetprefix</span>&gt;</span><span class="tag">&lt;/<span class="name">facesetprefix</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">maxfacescount</span>&gt;</span><span class="tag">&lt;/<span class="name">maxfacescount</span>&gt;</span>        </span><br><span class="line"><span class="tag">&lt;/<span class="name">Facer</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>其中ak填写为API Key，sk填写为API Secret。facesetprefix为face set的前缀，当有多个应用使用同一个账号时，可以使用此前缀做区分。maxfacescount为相册人像主页上呈现的人物的个数。</p>
+<h2 id="数据备份"><a href="#数据备份" class="headerlink" title="数据备份"></a>数据备份</h2><p>jalbum支持将数据备份到华为云对象存储和亚马逊的S3对象存储。当备份到华为云时，默认使用归档存储级别。两种备份目的端的使用是完全相同的。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">s3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bucketname</span>&gt;</span><span class="tag">&lt;/<span class="name">bucketname</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ak</span>&gt;</span><span class="tag">&lt;/<span class="name">ak</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sk</span>&gt;</span><span class="tag">&lt;/<span class="name">sk</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">useHttps</span>&gt;</span><span class="tag">&lt;/<span class="name">useHttps</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">s3</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">HuaweiOBS</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bucketname</span>&gt;</span><span class="tag">&lt;/<span class="name">bucketname</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ak</span>&gt;</span><span class="tag">&lt;/<span class="name">ak</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sk</span>&gt;</span><span class="tag">&lt;/<span class="name">sk</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">useHttps</span>&gt;</span><span class="tag">&lt;/<span class="name">useHttps</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">HuaweiOBS</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>其中，bucketname指定用于备份的容器，ak、sk分别为对象存储服务提供的访问凭据，需要到相应的对象存储服务上申请。useHttps指定是否使用https协议上传数据，为提高性能，如数据安全性要求不高，可以直接使用http协议传输。</p>
+<h2 id="访问记录"><a href="#访问记录" class="headerlink" title="访问记录"></a>访问记录</h2><p>jalbum本身支持access日志，有log4j.xml配置。可以自行根据需要修改log4j.xml定制日志格式和存放目录。</p>
+<p>另外，当相册在互联网上面开放访问时，可以配置Goolge Analytics，实现对访问进行统计。只需要将Goolge Analytics提供的ID写入如下配置：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">GoogleAnalyticsID</span>&gt;</span><span class="tag">&lt;/<span class="name">GoogleAnalyticsID</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>如果配置为空，则不启用统计。</p>
+<h2 id="权限控制"><a href="#权限控制" class="headerlink" title="权限控制"></a>权限控制</h2><p>当jalbum开放到互联网访问时，为了避免搜索引擎以及其它爬虫工具抓取照片，系统默认开启了需要输入Token方式来访问。<br>当不需要此权限控制时，可关闭Token访问，配置如下标签：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">accessAuth</span>&gt;</span>true<span class="tag">&lt;/<span class="name">accessAuth</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="后台管理"><a href="#后台管理" class="headerlink" title="后台管理"></a>后台管理</h1><h2 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h2><p>在开启权限控制时，相册提供后台页面和管理员登录方式来管理Token，启动后台备份和立即刷新数据等操作。<br>在本地登录时，可以管理Token，使用浏览器或者curl -X GET ${url}命令访问如下地址：</p>
+<p>生成和获取当前系统的Token：<a href="http://127.0.0.1:2148/getToken" target="_blank" rel="noopener">http://127.0.0.1:2148/getToken</a></p>
+<p>清除当前所有Token，并重新生成一批新的Token：<a href="http://127.0.0.1:2148/clearToken" target="_blank" rel="noopener">http://127.0.0.1:2148/clearToken</a></p>
+<p>清除指定Token，并重新生成新的Token，其中${token}替换成需要删除的Token：<a href="http://127.0.0.1:2148/removeToken?token=${token}" target="_blank" rel="noopener">http://127.0.0.1:2148/removeToken?token=${token}</a></p>
+<h2 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h2><p>当使用管理员Token登录，或者在本地登录时：</p>
+<p>1、系统在单独的照片页面会显示“隐藏”按钮，用于隐藏不需要显示的照片，被隐藏的照片不会备份到对象存储系统，隐藏的照片永久不再显示，但照片文件仍然存在本地系统盘上面。</p>
+<p>2、当系统的数据与磁盘出现不同步到问题时，可以使用如下接口立即是同步硬盘数据与系统记录的数据：</p>
+<p><a href="http://127.0.0.1:2148/flushnow" target="_blank" rel="noopener">http://127.0.0.1:2148/flushnow</a></p>
+<p>3、是否备份媒体文件到远端，需要访问如下地址触发，默认情况下，新增照片不会备份到远端。</p>
+<p><a href="http://127.0.0.1:2148/syncnow" target="_blank" rel="noopener">http://127.0.0.1:2148/syncnow</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Shentar</p>
+              <p class="site-description motion-element" itemprop="description">Java, Jetty, WEB网络, 数据库, 软件技术</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/shentar" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:tyanqun@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/tyanqun" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/tyanqun" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Shentar</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
